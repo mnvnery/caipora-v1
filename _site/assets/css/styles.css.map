@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.sass",
+		"_sass/main.sass",
+		"_sass/0-base/dir-base.sass",
+		"_sass/0-base/base-style.sass",
+		"_sass/1-modules/dir-modules.sass",
+		"_sass/2-layouts/dir-layouts.sass"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"@import \"0-base/dir-base\";\n@import \"1-modules/dir-modules\";\n@import \"2-layouts/dir-layouts\";\n\n",
+		"@import \"base-style\";\n",
+		"@font-face {\n    font-family: \"HKGrotesk\";\n    src: url(\"../fonts/HKGrotesk-Regular.otf\") format(\"opentype\"); }\n\nbody {\n    font-family: \"HKGrotesk\", sans-serif;\n    background-color: #F0EFEA;\n    letter-spacing: 0.03em;\n    margin: 0;\n    overflow-x: hidden; }\n\na {\n    text-decoration: none;\n    color: black; }\n\na:hover {\n    text-decoration: none;\n    color: black; }\n",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": "AGAA,UAAU,GACN,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,qCAAqC,CAAC,kBAAkB;;AAEjE,AAAA,IAAI,CAAC,EACD,WAAW,EAAE,uBAAuB,EACpC,gBAAgB,EAAE,OAAO,EACzB,cAAc,EAAE,MAAM,EACtB,MAAM,EAAE,CAAC,EACT,UAAU,EAAE,MAAM,GAAG;;AAEzB,AAAA,CAAC,CAAC,EACE,eAAe,EAAE,IAAI,EACrB,KAAK,EAAE,KAAK,GAAG;;AAEnB,AAAA,CAAC,CAAC,KAAK,CAAC,EACJ,eAAe,EAAE,IAAI,EACrB,KAAK,EAAE,KAAK,GAAG"
+}
