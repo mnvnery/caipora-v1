@@ -3,8 +3,71 @@
     <head>
         <title>Caipora</title>
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/js/sidebar.js" defer></script>
+
     </head>
     <body>
-        <h1> Hello world! </h1>
+        <main class="index">
+    <img class="header-img" src="/assets/img/header.svg" alt="CAIPORA">
+
+    <div class="menu sidenav">
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="menu-links">
+            <a class="about-link" href="/about"><p>SOBRE NÓS</p></a>
+            <a class="sidebar-link" href="#"><p>VIAGENS</p></a>
+            <a class="sidebar-forward-link" href="/amazonia"><p>AMAZÓNIA</p></a>
+            <a class="sidebar-forward-link" href="#"><p>GUATEMALA</p></a>
+            <a class="sidebar-link" href="#"><p>CONTACTO</p></a>
+            <a class="sidebar-link" href="#"><p>CALENDÁRIO</p></a>
+        </div>   
+    </div>
+
+    <div class="map-grid">
+        <div class="venezuela-flex">
+            <img class="locations" src="/assets/img/venezuela.webp" alt="venezuela">
+            <div class="dot-flex"><span class="dot dot-venezuela"></span><span class="dot-title dot-title-venezuela">VENEZUELA</span></div>
+        </div>
+        <div class="amazonia-flex">
+            <div class="dot-flex"><span class="dot dot-amazonia"></span><span class="dot-title dot-title-amazonia">AMAZÓNIA</span></div>
+            <div style="position: relative;">
+                <img class="locations" src="/assets/img/amazonia.webp" alt="amazonia">
+                <canvas id='canvas' width=525 height=335 style='position: absolute; top:0; left: 0'></canvas>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d'),
+    radius = 40;
+
+//prepare canvas
+ctx.fillStyle = '#F9E9D1'
+ctx.fillRect(0, 0, 520, 520);
+
+//prepare a 30% opacity eraser
+ctx.globalCompositeOperation = 'destination-out';
+
+// make random strokes around cursor while mouse moves
+canvas.onmousemove = function(e) {
+    var rect = this.getBoundingClientRect();
+    var r = this.getBoundingClientRect(),
+    x = e.clientX - r.left,
+    y = e.clientY - r.top;
+
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.arc(x, y, radius, 0, 2*Math.PI);
+    ctx.fill();
+
+}
+</script>
     </body>
 </html>
