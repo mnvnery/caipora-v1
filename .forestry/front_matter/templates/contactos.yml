@@ -1,4 +1,13 @@
 ---
 label: Contactos
 hide_body: true
-fields: []
+fields:
+- name: contactos
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Contactos
