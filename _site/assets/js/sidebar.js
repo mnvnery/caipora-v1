@@ -35,6 +35,7 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
     }
     else {
         $('.team-img').hover(function(){
+            console.log('hi');
             $(this).next().toggle()
         })
     }
