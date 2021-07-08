@@ -15,3 +15,5 @@ fields:
     schema:
       format: html-blocks
   label: Sobre
+pages:
+- sobre.html
