@@ -26,7 +26,7 @@ a:hover { text-decoration: none; color: black; }
 
 .dot-amazonia { margin-bottom: 5vh; margin-left: 4vw; }
 
-.sidenav { height: 100%; width: 5vw; position: fixed; z-index: 1; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
+.sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
 
 .menu-links { margin-top: 10vh; margin-left: -15vw; transition: 0.3s; }
 

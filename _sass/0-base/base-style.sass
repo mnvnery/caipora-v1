@@ -1,32 +1,105 @@
-@font-face 
+@font-face
     font-family: "HKGrotesk"
-    src: url("../fonts/HKGrotesk-Regular.otf") format("opentype")
+    src: url("HKGrotesk-Medium.otf") format("opentype")
 
-@font-face 
+@font-face
+    font-family: "HKGrotesk-Bold"
+    src: url("HKGrotesk-Bold.otf") format("opentype")
+
+@font-face
     font-family: "Pangram-Bold"
-    src: url("../fonts/Pangram-Bold.otf") format("opentype")
+    src: url("Pangram-Bold.otf") format("opentype")
 
-@font-face 
+@font-face
     font-family: "Pangram-Medium"
-    src: url("../fonts/Pangram-Medium.otf") format("opentype")
+    src: url("Pangram-Medium.otf") format("opentype")
 
-@font-face 
+@font-face
     font-family: "Pangram-ExtraBold"
-    src: url("../fonts/Pangram-ExtraBold.otf") format("opentype")
-    
-body
-    font-family: "HKGrotesk", sans-serif
+    src: url("Pangram-ExtraBold.otf") format("opentype")
+
+// Define fonts for body and headers
+$body-font: "HKGrotesk", sans-serif
+$headers-font: "Nunito", "Helvetica", "sans-serif"
+
+body 
     letter-spacing: 0.03em
     margin: 0
     overflow-x: hidden
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    display: flex
+    flex-direction: column
+
+
+html, body 
+    height: 100%
+
 
 a 
     text-decoration: none
-    color: black
+    color: black !important
 
-a:hover
+a:hover 
     text-decoration: none
-    color: black
+    color: black !important
+
+
+main 
+    margin-left: 5vw
+    margin-right: 5vw
+    margin-top: 7vw
+    flex: 1 0 auto
+
+//simple_form input for rich_text_area hight
+trix-editor.form-control 
+    height: auto
+
+
+body 
+    background-color: $ocre
+
+h1 
+    font-family: "HKGrotesk-Bold"
+    font-size: 1.9vw
+    letter-spacing: 0.1vw
+    text-transform: uppercase
+
+
+
+h4 
+    font-family: "HKGrotesk-Bold"
+    font-size: 1.1vw
+    letter-spacing: 0.1vw
+
+
+
+h5 
+    font-family: "HKGrotesk-Bold"
+    font-size: 0.9vw
+    letter-spacing: 0.1vw
+
+
+@media only screen and (max-width: 600px) 
+    main 
+        margin-left: 11vw
+        margin-top: 10vw
+        margin-right: 0
+    
+
+    h1 
+        font-size: 4.2vw
+        letter-spacing: 0.3vw
+    
+
+    h4 
+        font-size: 2.5vw
+    
+
+    h5 
+        font-size: 2vw
+    
+
 
 $ocre : #F9E9D1
 $blood : #B42C0F

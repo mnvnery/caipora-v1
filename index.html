@@ -1,48 +1,36 @@
 ---
 layout: default
 ---
-<main class="index">
-    <img class="header-img" src="{{ site.baseurl }}/assets/img/header.svg" alt="CAIPORA">
+<img class="header-img desktop" src="/assets/header.svg" alt="CAIPORA">
+<img class="header-img mobile" src="/assets/mobile-header.svg" alt="CAIPORA">
 
-    <div class="menu sidenav">
-        <button class="hamburger hamburger--squeeze" type="button">
-            <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <div class="menu-links">
-            <a class="about-link" href="{{ site.baseurl }}/about"><p>SOBRE NÓS</p></a>
-            <a class="sidebar-link" href="#"><p>VIAGENS</p></a>
-            <a class="sidebar-forward-link" href="{{ site.baseurl }}/amazonia"><p>AMAZÓNIA</p></a>
-            <a class="sidebar-forward-link" href="#"><p>GUATEMALA</p></a>
-            <a class="sidebar-link" href="#"><p>CONTACTO</p></a>
-            <a class="sidebar-link" href="#"><p>CALENDÁRIO</p></a>
-        </div>   
+
+<div class="map-grid">
+    <div class="venezuela-flex">
+        
+        <img class="locations" src="/assets/venezuela.webp" alt="guatemala">
+        <div class="dot-flex"><span class="dot dot-venezuela"></span><span class="dot-title dot-title-venezuela">GUATEMALA</span></div>
     </div>
-
-    <div class="map-grid">
-        <div class="venezuela-flex">
-            <img class="locations" src="{{ site.baseurl }}/assets/img/venezuela.webp" alt="venezuela">
-            <div class="dot-flex"><span class="dot dot-venezuela"></span><span class="dot-title dot-title-venezuela">VENEZUELA</span></div>
-        </div>
-        <div class="amazonia-flex">
-            <div class="dot-flex"><span class="dot dot-amazonia"></span><span class="dot-title dot-title-amazonia">AMAZÓNIA</span></div>
-            <div style="position: relative;">
-                <img class="locations" src="{{ site.baseurl }}/assets/img/amazonia.webp" alt="amazonia">
-                <canvas id='canvas' width=525 height=335 style='position: absolute; top:0; left: 0'></canvas>
-            </div>
+    <div class="amazonia-flex">
+        <div class="dot-flex"><span class="dot dot-amazonia"></span><span class="dot-title dot-title-amazonia">AMAZÓNIA</span></div>
+        <div style="position: relative;">
+            <img class="locations" src="/assets/amazonia.webp" alt="amazonia">
+            
         </div>
     </div>
-</main>
+    <canvas id='canvas' width=1920 height=800 style='position: absolute; top:0; left: 0'></canvas>
+</div>
 
 <script>
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d'),
-    radius = 40;
+    brush = new Image();
+
+    brush.src = 'assets/brush.png'
 
 //prepare canvas
 ctx.fillStyle = '#F9E9D1'
-ctx.fillRect(0, 0, 520, 520);
+ctx.fillRect(0, 0, 1920, 800);
 
 //prepare a 30% opacity eraser
 ctx.globalCompositeOperation = 'destination-out';
@@ -54,10 +42,10 @@ canvas.onmousemove = function(e) {
     x = e.clientX - r.left,
     y = e.clientY - r.top;
 
-    ctx.beginPath();
-    ctx.moveTo(x + radius, y);
-    ctx.arc(x, y, radius, 0, 2*Math.PI);
-    ctx.fill();
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.drawImage(brush, x, y);
+    
 
 }
+
 </script>
