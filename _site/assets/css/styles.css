@@ -160,6 +160,8 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .team-info { width: 18vw; padding: 1vw; position: absolute; background-color: #f6d9d9; display: none; }
 
+.caipora-about { display: inline; font-size: 0.5em; }
+
 @media only screen and (max-width: 600px) { .about-us { font-size: 4vw; margin: 2vh 5vw 4vh 5vw; } .team-img { width: 44.5vw; } .team-info { width: 44.5vw; } }
 
 .contact { margin-left: 6vw; padding-top: 2vh; font-size: 1.6vw; font-family: "HKGrotesk"; }
