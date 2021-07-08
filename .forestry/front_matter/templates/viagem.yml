@@ -78,5 +78,28 @@ fields:
     schema:
       format: html-blocks
   label: Inclui/Exclui
+- name: datas_disponiveis
+  type: field_group_list
+  fields:
+  - name: data_inicio
+    type: text
+    config:
+      required: false
+    label: Data Início
+  - name: data_fim
+    type: text
+    config:
+      required: false
+    label: Data Fim
+  - name: ano
+    type: text
+    config:
+      required: false
+    label: Ano
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Datas Disponíveis
 pages:
 - amazonia.html
