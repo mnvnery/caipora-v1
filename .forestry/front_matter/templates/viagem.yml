@@ -78,3 +78,5 @@ fields:
     schema:
       format: html-blocks
   label: Inclui/Exclui
+pages:
+- amazonia.html
