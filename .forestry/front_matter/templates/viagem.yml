@@ -33,6 +33,15 @@ fields:
       schema:
         format: markdown
     label: Descrição
+  - name: programa
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Programa
   config:
     min: 
     max: 
