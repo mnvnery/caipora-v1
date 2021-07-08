@@ -69,3 +69,12 @@ fields:
     max: 
     labelField: 
   label: FAQ
+- name: inclui/exclui
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Inclui/Exclui
