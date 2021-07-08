@@ -1,28 +1,39 @@
 @font-face
     font-family: "HKGrotesk"
-    src: url("HKGrotesk-Medium.otf") format("opentype")
+    src: url("../fonts/HKGrotesk-Medium.otf") format("opentype")
 
 @font-face
     font-family: "HKGrotesk-Bold"
-    src: url("HKGrotesk-Bold.otf") format("opentype")
+    src: url("../fonts/HKGrotesk-Bold.otf") format("opentype")
 
 @font-face
     font-family: "Pangram-Bold"
-    src: url("Pangram-Bold.otf") format("opentype")
+    src: url("../fonts/Pangram-Bold.otf") format("opentype")
 
 @font-face
     font-family: "Pangram-Medium"
-    src: url("Pangram-Medium.otf") format("opentype")
+    src: url("../fonts/Pangram-Medium.otf") format("opentype")
 
 @font-face
     font-family: "Pangram-ExtraBold"
-    src: url("Pangram-ExtraBold.otf") format("opentype")
+    src: url("../fonts/Pangram-ExtraBold.otf") format("opentype")
+
+$ocre : #F9E9D1
+$blood : #B42C0F
+$light-pink : #FAE5E6
+$dark-pink : #f6d9d9
+$light-green : #EFF6F0
+$dark-green : #DDEBDF
+$dark-blue : #D9DDE8
+$light-blue : #E6E8F0
+
 
 // Define fonts for body and headers
 $body-font: "HKGrotesk", sans-serif
 $headers-font: "Nunito", "Helvetica", "sans-serif"
 
 body 
+    font-family: "HKGrotesk", sans-serif !important
     letter-spacing: 0.03em
     margin: 0
     overflow-x: hidden
@@ -32,12 +43,13 @@ body
     flex-direction: column
 
 
+
 html, body 
     height: 100%
 
 
 a 
-    text-decoration: none
+    text-decoration: none !important
     color: black !important
 
 a:hover 
@@ -50,10 +62,6 @@ main
     margin-right: 5vw
     margin-top: 7vw
     flex: 1 0 auto
-
-//simple_form input for rich_text_area hight
-trix-editor.form-control 
-    height: auto
 
 
 body 
@@ -100,10 +108,3 @@ h5
         font-size: 2vw
     
 
-
-$ocre : #F9E9D1
-$blood : #B42C0F
-$light-pink : #F6E6E5
-$dark-pink : #F1DAD9
-$light-green : #EFF6F0
-$dark-green : #DDEBDF
