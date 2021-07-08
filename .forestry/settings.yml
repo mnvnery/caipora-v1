@@ -17,7 +17,7 @@ sections:
   path: guatemala.html
   label: Guatemala
 - type: document
-  path: contactos.html
+  path: contacto.html
   label: Contacto
 - type: document
   path: termos.html
