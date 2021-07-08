@@ -6,3 +6,35 @@ fields:
   name: layout
   label: layout
   hidden: true
+- name: destino
+  type: text
+  config:
+    required: false
+  label: Destino
+- name: preco
+  type: text
+  config:
+    required: false
+  label: Preço
+- name: programa
+  type: field_group_list
+  fields:
+  - name: dia
+    type: text
+    config:
+      required: false
+    label: Dia
+  - name: descricao
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Descrição
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Programa
