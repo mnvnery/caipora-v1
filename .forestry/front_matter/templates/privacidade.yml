@@ -1,4 +1,13 @@
 ---
 label: Privacidade
 hide_body: true
-fields: []
+fields:
+- name: privacidade
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Privacidade
