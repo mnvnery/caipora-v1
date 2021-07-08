@@ -1,4 +1,13 @@
 ---
 label: Termos e Condições
 hide_body: true
-fields: []
+fields:
+- name: termos_e_condicoes
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Termos e Condições
