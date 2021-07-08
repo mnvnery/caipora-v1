@@ -4,12 +4,34 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-posts
-  label: Posts
-  create: all
-- type: jekyll-pages
-  label: Pages
-  create: all
+- type: document
+  path: apresentacao.html
+  label: Apresentação
+  match: "**/*"
+- type: document
+  path: sobre.html
+  label: Sobre Nós
+  match: "**/*"
+- type: document
+  path: amazonia.html
+  label: Amazónia
+  match: "**/*"
+- type: document
+  path: guatemala.html
+  label: Guatemala
+  match: "**/*"
+- type: document
+  path: contactos.html
+  label: Contacto
+  match: "**/*"
+- type: document
+  path: termos.html
+  label: Termos e Condições
+  match: "**/*"
+- type: document
+  path: privacidade.html
+  label: Privacidade
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
