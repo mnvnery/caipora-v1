@@ -47,3 +47,25 @@ fields:
     max: 
     labelField: 
   label: Programa
+- name: faq
+  type: field_group_list
+  fields:
+  - name: pergunta
+    type: text
+    config:
+      required: false
+    label: Pergunta
+  - name: resposta
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Resposta
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: FAQ
