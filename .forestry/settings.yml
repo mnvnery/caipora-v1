@@ -7,33 +7,26 @@ sections:
 - type: document
   path: apresentacao.html
   label: Apresentação
-  match: "**/*"
 - type: document
   path: sobre.html
   label: Sobre Nós
-  match: "**/*"
 - type: document
   path: amazonia.html
   label: Amazónia
-  match: "**/*"
 - type: document
   path: guatemala.html
   label: Guatemala
-  match: "**/*"
 - type: document
   path: contactos.html
   label: Contacto
-  match: "**/*"
 - type: document
   path: termos.html
   label: Termos e Condições
-  match: "**/*"
 - type: document
   path: privacidade.html
   label: Privacidade
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/img
+public_path: assets/img
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
