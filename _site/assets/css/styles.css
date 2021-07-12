@@ -114,7 +114,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .light-blue { background-color: #E6E8F0; }
 
-.index { height: 100vh; width: 100vw; background-color: #F9E9D1; overflow: hidden; }
+.index-page { overflow: hidden; }
 
 .header-img { z-index: 3; position: fixed; top: 0; }
 
@@ -140,9 +140,9 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .dot-amazonia { margin-bottom: 5vh; margin-left: 4vw; }
 
-@media only screen and (max-width: 600px) { .mobile { display: block; } .desktop { display: none; } }
+@media only screen and (min-width: 600px) { .desktop { display: block; } .mobile { display: none; } #mobile-canvas { display: none; } }
 
-@media only screen and (min-width: 600px) { .desktop { display: block; } .mobile { display: none; } }
+@media only screen and (max-width: 600px) { .mobile { display: block; } .desktop { display: none; } .map-grid { flex-direction: column; margin-left: 11vw; } .venezuela-flex { flex-direction: column; } .amazonia-flex { margin-top: 5vh; margin-left: 0; } .locations { width: 89vw; } .dot { width: 3vw; height: 3vw; } .dot-flex { margin-left: 20vw; } .dot-amazonia { margin-left: 35vw; } #canvas { display: none; } }
 
 .about-us { font-size: 1.5vw; margin: 2vh 15vw 7vh 15vw; }
 
