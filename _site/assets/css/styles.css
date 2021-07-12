@@ -110,7 +110,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .home-hide { display: none !important; }
 
-@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; width: 11vw; display: flex !important; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .sidenav a { font-size: 4.8vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
+@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .sidenav a { font-size: 4.8vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
 
 .ocre { background-color: #F9E9D1; }
 
