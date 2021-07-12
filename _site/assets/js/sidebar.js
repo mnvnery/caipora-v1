@@ -16,9 +16,6 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
         }
     });
 
-
-
-
     $('.faq-question:even').addClass('green');
     $('.faq-answer:even').addClass('green');
     $('.arrow-faq').click(function() {
@@ -26,8 +23,14 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
         $(this).toggleClass('ri-arrow-up-s-line');
     });
 
+    $('.dot-amazonia').click(function(){
+        window.location.href='/caipora_jekyll/amazonia';
+    })
 
-
+    $('.dot-venezuela').click(function(){
+        window.location.href='/caipora_jekyll/guatemala';
+    })
+    
     if (mediaQuery.matches) {
         $('.team-img').click(function(){
             $(this).next().toggle()
