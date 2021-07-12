@@ -1,8 +1,6 @@
-.index 
-    height: 100vh
-    width: 100vw
-    background-color: $ocre
+.index-page
     overflow: hidden
+
 
 
 .header-img
@@ -81,21 +79,53 @@
     margin-left: 4vw
 
 
-@media only screen and (max-width: 600px) 
-    .mobile 
-        display: block
-    
-    .desktop 
-        display: none
-    
-
 @media only screen and (min-width: 600px) 
     .desktop 
         display: block
     
     .mobile 
         display: none
+        
+    #mobile-canvas
+        display: none
+
+@media only screen and (max-width: 600px) 
+    .mobile 
+        display: block
     
+    .desktop 
+        display: none
+
+    .map-grid
+        flex-direction: column
+        margin-left: 11vw
+
+    .venezuela-flex
+        flex-direction: column
+
+    .amazonia-flex
+        margin-top: 5vh
+        margin-left: 0
+    
+    .locations
+        width: 89vw
+
+    .dot
+        width: 3vw
+        height: 3vw
+    
+    .dot-flex
+        margin-left: 20vw
+
+    .dot-amazonia
+        margin-left: 35vw
+
+    #canvas
+        display: none
+
+
+
+
 
 
 

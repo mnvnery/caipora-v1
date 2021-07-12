@@ -25,7 +25,6 @@ layout: default
 
 <div class="map-grid">
     <div class="venezuela-flex">
-        
         <img class="locations" src="{{ site.baseurl }}/assets/img/venezuela.webp" alt="guatemala">
         <div class="dot-flex"><span class="dot dot-venezuela"></span><span class="dot-title dot-title-venezuela">GUATEMALA</span></div>
     </div>
@@ -36,7 +35,8 @@ layout: default
             
         </div>
     </div>
-    <canvas id='canvas' width=1920 height=800 style='position: absolute; top:0; left: 0'></canvas>
+    <canvas id='canvas' width=1920 height=800 style='position: absolute; top:0; left: 0'></canvas> 
+    <canvas id='mobile-canvas' width=375 height=800 style='position: absolute; top:0; left: 0'></canvas> 
 </div>
 
 <script>
@@ -62,8 +62,32 @@ canvas.onmousemove = function(e) {
 
     ctx.globalCompositeOperation = 'destination-out';
     ctx.drawImage(brush, x, y);
-    
-
 }
+var mobileCanvas = document.getElementById('mobile-canvas');
+var context = mobileCanvas.getContext('2d'),
+    brush = new Image();
+
+    brush.src ='{{ site.baseurl }}/assets/img/brush.png'
+
+//prepare mobileCanvas
+context.fillStyle = '#F9E9D1'
+context.fillRect(0, 0, 375, 800);
+
+//prepare a 30% opacity eraser
+context.globalCompositeOperation = 'destination-out';
+
+// make random strokes around cursor while mouse moves
+mobileCanvas.onmousemove = function(e) {
+    var rect = this.getBoundingClientRect();
+    var r = this.getBoundingClientRect(),
+    x = e.clientX - r.left,
+    y = e.clientY - r.top;
+
+    context.globalCompositeOperation = 'destination-out';
+    context.drawImage(brush, x, y);
+}  
+</script>
+
+<script>
 
 </script>
