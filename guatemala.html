@@ -162,11 +162,11 @@ inclui_exclui:
         </span>
     </button>
     <div class="menu-links">
-        <a class="sidebar-link active" href="{{ site.baseurl }}/apresentacao.html"><p>APRESENTAÇÃO</p></a>
+        <a class="sidebar-link" href="{{ site.baseurl }}/apresentacao.html"><p>APRESENTAÇÃO</p></a>
         <a class="sidebar-link" href="{{ site.baseurl }}/sobre"><p>SOBRE NÓS</p></a>
         <a class="sidebar-link" href="#"><p class="mb-1">VIAGENS</p></a>
         <a class="sidebar-forward-link" href="{{ site.baseurl }}/amazonia"><p class="mb-1">AMAZÓNIA</p></a>
-        <a class="sidebar-forward-link" href="{{ site.baseurl }}/guatemala"><p>GUATEMALA</p></a>
+        <a class="sidebar-forward-link active" href="{{ site.baseurl }}/guatemala"><p>GUATEMALA</p></a>
         <a class="sidebar-link" href="{{ site.baseurl }}/contacto"><p>CONTACTO</p></a>
     </div> 
     <p class="page-title mobile">GUATEMALA</p>
@@ -179,3 +179,91 @@ inclui_exclui:
 <div class="title-left desktop green">
 <p class="page-left page-left-smaller">GUATEMALA</p>
 </div>
+
+<main>
+  <h1 class='text-center my-4'>DATAS POR ANUNCIAR</h1>
+      <div class="trip-map"><img src="{{ site.baseurl }}/assets/img/mapa-guatemala.svg" class="map-img guatemala" alt=""></div>
+      <h4 class="trip-route text-center mt-4 mb-5">ANTIGUA — SANTA MARÍA DE JESÚS — PACAYA — ATITLÁN — <br> FUENTES GEORGINA — PANAJACHEL — NEBAJ — SEMUC CHAMPEY <br>— PARQUE NACIONAL TIKAL — FLORES — COPAN RUINAS</h4>  
+  <div class="trip-info text-center">
+      <div> 
+          <h4>DATAS DISPONÍVEIS</h4>
+          <h4>–</h4>
+          <h4>POR MARCAÇÃO</h4>
+          <h4>(TODO O ANO)</h4>
+      </div>
+      <div class="border-right border-dark"></div>
+      <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
+      <div>
+          <h4>PREÇO</h4>
+          <h4>–</h4>
+          <h4>1250€<strong>  (VOO NÃO INCLUÍDO)</strong></h4>
+          <h5 class="mt-2">MÍNIMO DE 4 / MÁXIMO DE 14 PESSOAS</h5>
+      </div>
+      <div class="border-right border-dark"></div>
+      <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
+      <div class='reserve-btn'>
+          <img src="{{ site.baseurl }}/assets/img/montanha.svg" alt="" class="reserve-img">      
+          <h4 class="reserve-text">
+          CONTACTAR
+          </h4>
+      </div>
+  </div>
+  <div class="d-flex border-bottom border-dark mobile-flex-invert">
+      <div class="program dark-green border-right border-dark program-guatemala">
+          <h4 class="mb-3 mobile-title">PROGRAMA DIA A DIA</h4>
+          {% for item in page.programa %}
+              <div class="program-day">{{ item.dia }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
+              <div class="program-description">{{ item.programa }}</div>
+          {% endfor %}
+      </div>
+      <div class=".d-none .d-sm-block border-bottom border-dark"></div>
+      <div class="description">{{ page.descricao_viagem }}</div>
+  </div>
+  <div class="d-flex mobile-flex-column">
+    <div class="d-flex flex-column w-100">
+        <div class="context border-bottom border-dark w-100 text-center"><img src="{{ site.baseurl }}/assets/img/context.svg" alt=""></div>
+        <div class="faq w-100">
+          {% for item in page.faq %}
+                <div class="faq-question border-bottom border-dark"><i>{{ item.pergunta }}</i><i class="arrow-faq ri-arrow-down-s-line"></i></div>
+                <div class="faq-answer border-bottom border-dark">{{ item.resposta }}</div>        
+        {% endfor %}
+        </div>
+    </div>
+    <div>
+        <div class="includes border-left border-bottom border-dark w-100 h-100 green">
+            <h4 class="mb-3 mobile-title">INCLUI/EXCLUI</h4>
+            {% for i in page.inclui_exclui %}
+            <span class="includes-tag"><i>INCLUÍDO</i></span><br>
+            <div class="includes-description">{{ i.inclui }}</div>
+            <span class="includes-tag"><i>NÃO INCLUÍDO</i></span><br>
+            <div class="includes-description">{{ i.exclui }}</div><br>
+            {% endfor %}
+        </div>
+    </div>
+    <div class=".d-none .d-sm-block border-bottom border-dark"></div>
+</div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ site.baseurl }}/assets/img/guatemala-01.jpeg" class="d-block" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ site.baseurl }}/assets/img/guatemala-02.jpeg" class="d-block" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ site.baseurl }}/assets/img/guatemala-03.jpeg" class="d-block" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ site.baseurl }}/assets/img/guatemala-04.jpeg" class="d-block" alt="">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+  </main>
