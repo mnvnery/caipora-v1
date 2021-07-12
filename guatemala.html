@@ -223,6 +223,7 @@ inclui_exclui:
     <div class="d-flex flex-column w-100">
         <div class="context border-bottom border-dark w-100 text-center"><img src="{{ site.baseurl }}/assets/img/context.svg" alt=""></div>
         <div class="faq w-100">
+          <div class="faq-title d-flex justify-content-between border-bottom border-dark"><strong>PERGUNTAS FREQUENTES</strong></div>
           {% for item in page.faq %}
                 <div class="faq-question border-bottom border-dark"><i>{{ item.pergunta }}</i><i class="arrow-faq ri-arrow-down-s-line"></i></div>
                 <div class="faq-answer border-bottom border-dark">{{ item.resposta }}</div>        
