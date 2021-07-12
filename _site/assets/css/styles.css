@@ -32,20 +32,6 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 @media only screen and (max-width: 600px) { main { margin-left: 11vw; margin-top: 10vw; margin-right: 0; } h1 { font-size: 4.2vw; letter-spacing: 0.3vw; } h4 { font-size: 2.5vw; } h5 { font-size: 2vw; } }
 
-.dot { height: 1.1vw; width: 1.1vw; background-color: #B42C0F; border-radius: 50%; display: inline-block; }
-
-.dot:hover { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border: solid 2px #B42C0F; background-color: transparent; }
-
-.dot:hover + .dot-title { visibility: visible; }
-
-.dot-flex { display: flex; align-items: baseline; }
-
-.dot-title { margin-left: 1vw; font-family: "Pangram-Bold"; letter-spacing: 0.15em; line-height: 0; visibility: hidden; }
-
-.dot-venezuela { margin-top: 5vh; margin-left: 3vw; }
-
-.dot-amazonia { margin-bottom: 5vh; margin-left: 4vw; }
-
 .sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
 
 .menu-links { margin-top: 10vh; margin-left: -15vw; transition: 0.3s; }
@@ -72,7 +58,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .footer-side { position: relative; float: right; position: absolute; top: 2vh; right: 2vw; }
 
-@media only screen and (max-width: 600px) { .footer { left: 11vw; right: 0; height: 8vh; font-size: 2.5vw; top: 2.5vh; } .footer-side { top: 2.7vh; right: 3vw; } .footer-img { width: 22vw; margin-top: 0; } }
+@media only screen and (max-width: 600px) { .footer { left: 11vw; right: 0; height: 8vh; font-size: 2.5vw; padding-top: 2.3vh; } .footer-side { top: 2.3vh; right: 3vw; } .footer-img { width: 22vw; margin-top: 0; } }
 
 .sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
 
@@ -109,6 +95,8 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 .page-left-smaller { letter-spacing: 3vh; font-size: 1.7vw; }
 
 .home-hide { display: none !important; }
+
+.page-title-mobile { display: none; }
 
 @media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .sidenav a { font-size: 4.8vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
 
