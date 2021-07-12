@@ -234,9 +234,9 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .btn-override:hover { text-decoration: underline; }
 
-.carousel-control-next-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora_jekyll/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/right.svg"); }
+.carousel-control-next-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora-v1/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/right.svg"); }
 
-.carousel-control-prev-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora_jekyll/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/left.svg"); }
+.carousel-control-prev-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora-v1/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/left.svg"); }
 
 .carousel-control-prev-icon, .carousel-control-next-icon { width: 3vw; height: 3vw; }
 
