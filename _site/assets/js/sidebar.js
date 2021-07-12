@@ -24,13 +24,13 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
     });
 
     $('.dot-amazonia').click(function(){
-        window.location.href='/caipora_jekyll/amazonia';
+        window.location.href='/caipora-v1/amazonia';
     })
 
     $('.dot-venezuela').click(function(){
-        window.location.href='/caipora_jekyll/guatemala';
+        window.location.href='/caipora-v1/guatemala';
     })
-    
+
     if (mediaQuery.matches) {
         $('.team-img').click(function(){
             $(this).next().toggle()
