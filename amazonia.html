@@ -231,17 +231,18 @@ descricao_viagem: "<p>A Amazónia é a maior floresta tropical do mundo com a ma
     <div class="d-flex border-bottom border-dark mobile-flex-invert">
         <div class="program dark-green border-right border-dark">
             <h4 class="mb-3 mobile-title">PROGRAMA DIA A DIA</h4>
-            <% @trip.programs.order(:id).each do |program| %>
-                <div class="program-day"><%= program.day %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary"><%= program.summary %></span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
-                <div class="program-description"><%= program.description.html_safe %></div>
-            <% end %>
+            {% for item in page.programa %}
+                <div class="program-day">
+                    {{ item.dia }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
+                <div class="program-description">{{ item.programa }}</div>
+            {% endfor %}
         </div>
         <div class=".d-none .d-sm-block border-bottom border-dark"></div>
-        <div class="description"><%= @trip.description %></div>
+        <div class="description">{{ page.descricao_viagem }}</div>
     </div>
 
     <div class="d-flex align-items-center text-center mobile-flex-invert">
-        <div class="context border-bottom border-dark"><%= image_tag 'context.svg' %></div>
+        <div class="context border-bottom border-dark"><img src="{{ site.baseurl }}/assets/img/context.svg" alt=""></div>
         <div class="to-measure border-bottom border-left border-dark">
         <h4 class="mobile-title">VIAGEM Á MEDIDA</h4>
         <p>Se gostaria de realizar esta viagem com a companhia à sua escolha, teremos gosto em organizá-la segundo as vossas necessidades, datas e duração, e o orçamento que mais vos convém.</p>
@@ -249,20 +250,20 @@ descricao_viagem: "<p>A Amazónia é a maior floresta tropical do mundo com a ma
     </div>
     <div class="d-flex mobile-flex-column">
         <div class="faq">
-            <% @trip.faqs.each do |faq| %>
-                <div class="faq-question d-flex justify-content-between border-bottom border-dark"><i><%= faq.question %></i><i class="arrow-faq ri-arrow-down-s-line"></i></div>
-                <div class="faq-answer border-bottom border-dark"><%= faq.answer.html_safe %></div>
-            <% end %>
+          {% for item in page.faq %}
+                <div class="faq-question d-flex justify-content-between border-bottom border-dark"><i>{{ item.pergunta }}</i><i class="arrow-faq ri-arrow-down-s-line"></i></div>
+                <div class="faq-answer border-bottom border-dark">{{ item.resposta }}</div>
+          {% endfor %}
         </div>
         <div class="includes border-left border-bottom border-dark">
             <h4 class="mb-3 mobile-title">INCLUI/EXCLUI</h4>
-            <% @trip.includes.each do |i| %>
+            
             <span class="includes-location"><b><%= i.location %></b></span><br>
             <span class="includes-tag"><i>INCLUÍDO</i></span><br>
             <div class="includes-description"><%= i.included %></div>
             <span class="includes-tag"><i>NÃO INCLUÍDO</i></span><br>
             <div class="includes-description"><%= i.nonincluded %></div><br>
-            <% end %>
+            
         </div>
         <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
     
