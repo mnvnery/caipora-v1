@@ -218,6 +218,8 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .faq-answer { padding: 2vh 2vw; display: none; }
 
+.faq-answer p { margin-bottom: 0; }
+
 .arrow-faq { float: right; }
 
 .faq { width: 65%; }
@@ -230,6 +232,8 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .includes-description { font-size: 1.05vw; }
 
+.includes-description p { margin-bottom: 0; }
+
 .carousel-inner img { margin: 10vh auto; width: 90%; height: 100vh; object-fit: cover; object-position: center; }
 
 .hide-guatemala { display: none; }
@@ -238,9 +242,9 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .btn-override:hover { text-decoration: underline; }
 
-.carousel-control-next-icon { background-image: url("/assets/right.svg"); }
+.carousel-control-next-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora_jekyll/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/right.svg"); }
 
-.carousel-control-prev-icon { background-image: url("/assets/left.svg"); }
+.carousel-control-prev-icon { background-image: url("https://raw.githubusercontent.com/mnvnery/caipora_jekyll/6b8b2f8650e451b367e84a6490d346bef13fd074/assets/img/left.svg"); }
 
 .carousel-control-prev-icon, .carousel-control-next-icon { width: 3vw; height: 3vw; }
 

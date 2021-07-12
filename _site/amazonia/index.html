@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Caipora</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/caipora/assets/css/styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,10 @@
         </span>
     </button>
     <div class="menu-links">
-        <a class="sidebar-link active" href="/caipora/apresentacao.html"><p>APRESENTAÇÃO</p></a>
+        <a class="sidebar-link" href="/caipora/apresentacao.html"><p>APRESENTAÇÃO</p></a>
         <a class="sidebar-link" href="/caipora/sobre"><p>SOBRE NÓS</p></a>
         <a class="sidebar-link" href="#"><p class="mb-1">VIAGENS</p></a>
-        <a class="sidebar-forward-link" href="/caipora/amazonia"><p class="mb-1">AMAZÓNIA</p></a>
+        <a class="sidebar-forward-link active" href="/caipora/amazonia"><p class="mb-1">AMAZÓNIA</p></a>
         <a class="sidebar-forward-link" href="/caipora/guatemala"><p>GUATEMALA</p></a>
         <a class="sidebar-link" href="/caipora/contacto"><p>CONTACTO</p></a>
     </div> 
@@ -175,11 +175,23 @@
         <div class="includes border-left border-bottom border-dark">
             <h4 class="mb-3 mobile-title">INCLUI/EXCLUI</h4>
             
-            <span class="includes-location"><b><%= i.location %></b></span><br>
+            <span class="includes-location"><b>MANAUS</b></span><br>
             <span class="includes-tag"><i>INCLUÍDO</i></span><br>
-            <div class="includes-description"><%= i.included %></div>
+            <div class="includes-description">Transporte, hospedagem com pequeno almoço, dois almoços (dias 2 e 3) e passeios.</div>
             <span class="includes-tag"><i>NÃO INCLUÍDO</i></span><br>
-            <div class="includes-description"><%= i.nonincluded %></div><br>
+            <div class="includes-description"><p>Jantares dos dias 1, 2 e 3, nem o almoço do dia 1.</p></div><br>
+            
+            <span class="includes-location"><b>COMUNIDADES</b></span><br>
+            <span class="includes-tag"><i>INCLUÍDO</i></span><br>
+            <div class="includes-description"><p>Transporte, hospedagem, toda a alimentação e passeios.</p></div>
+            <span class="includes-tag"><i>NÃO INCLUÍDO</i></span><br>
+            <div class="includes-description"><p>Bebidas alcoólicas.</p></div><br>
+            
+            <span class="includes-location"><b>PRESIDENTE FIGUEIREDO</b></span><br>
+            <span class="includes-tag"><i>INCLUÍDO</i></span><br>
+            <div class="includes-description"><p>Transporte, hospedagem, alimentação e passeios.</p></div>
+            <span class="includes-tag"><i>NÃO INCLUÍDO</i></span><br>
+            <div class="includes-description"><p>Jantares.</p></div><br>
             
         </div>
         <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
@@ -189,31 +201,33 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <%= image_tag 'amazonia-1' , class: "d-block" %>
+              <img src="/caipora/assets/img/amazonia-1.jpg" class="d-block" alt="">
             </div>
             <div class="carousel-item">
-            <%= image_tag 'amazonia-2', class: "d-block" %>
+              <img src="/caipora/assets/img/amazonia-2.jpg" class="d-block" alt="">
             </div>
             <div class="carousel-item">
-            <%= image_tag 'amazonia-3', class: "d-block" %>
+              <img src="/caipora/assets/img/amazonia-3.jpg" class="d-block" alt="">
             </div>
             <div class="carousel-item">
-            <%= image_tag 'amazonia-4', class: "d-block" %>
+              <img src="/caipora/assets/img/amazonia-4.jpg" class="d-block" alt="">
             </div>
             <div class="carousel-item">
-            <%= image_tag 'amazonia-5', class: "d-block" %>
+              <img src="/caipora/assets/img/amazonia-5.jpg" class="d-block" alt="">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only"></span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only"></span>
         </a>
     </div>
     </main>
+
+
     
     <div class='footer green'>
         <div>
@@ -225,5 +239,8 @@
             <img src="/caipora/assets/img/turismo.svg" alt="" class="footer-img">
         </div>
     <div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
 </html>
