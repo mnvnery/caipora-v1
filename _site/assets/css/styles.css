@@ -174,7 +174,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .program-day { font-size: 1vw; text-transform: uppercase; font-weight: bold; margin-left: 1vw; margin-bottom: 0.5vh; }
 
-.program-description { font-size: 1.05vw; margin-bottom: 2.5vh; }
+.program-description { font-size: 1.05vw; }
 
 .description { width: 70vw; padding: 6vh 4vw; font-size: 1.5vw; line-height: 4.5vh; }
 
