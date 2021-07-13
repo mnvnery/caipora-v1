@@ -255,7 +255,7 @@ inclui_exclui:
         <div class="context border-bottom border-dark"><img src="{{ site.baseurl }}/assets/img/context.svg" alt="" class="context-img"></div>
         <div class="to-measure border-bottom border-left border-dark">
         <h4 class="mobile-title">VIAGEM Á MEDIDA</h4>
-        <p>Se gostaria de realizar esta viagem com a companhia à sua escolha, teremos gosto em organizá-la segundo as vossas necessidades, datas e duração, e o orçamento que mais vos convém.</p>
+        <p class="program-description">Se gostaria de realizar esta viagem com a companhia à sua escolha, teremos gosto em organizá-la segundo as vossas necessidades, datas e duração, e o orçamento que mais vos convém.</p>
         </div>
     </div>
     <div class="d-flex mobile-flex-column">
@@ -263,7 +263,7 @@ inclui_exclui:
           <div class="faq-title d-flex justify-content-between border-bottom border-dark"><strong>PERGUNTAS FREQUENTES</strong></div>
           {% for item in page.faq %}
                 <div class="faq-question d-flex justify-content-between border-bottom border-dark"><i>{{ item.pergunta }}</i><i class="arrow-faq ri-arrow-down-s-line"></i></div>
-                <div class="faq-answer border-bottom border-dark">{{ item.resposta }}</div>
+                <div class="faq-answer border-bottom border-dark program-description">{{ item.resposta }}</div>
           {% endfor %}
         </div>
         <div class="includes border-left border-bottom border-dark">
