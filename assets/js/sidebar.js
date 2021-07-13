@@ -18,10 +18,20 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
 
     $('.faq-question:even').addClass('green');
     $('.faq-answer:even').addClass('green');
-    $('.arrow-faq').click(function() {
-        jQuery(this).parent().next().toggle();
-        $(this).toggleClass('ri-arrow-up-s-line');
-    });
+    
+    if (mediaQuery.matches) {
+        $('.program-day').click(function(){
+            $(this).next().toggle()
+            $(this).find('.arrow-program').toggleClass('ri-arrow-up-s-line');
+            $(this).find('.arrow-program').toggleClass('ri-arrow-down-s-line');
+        })
+    }
+
+    $('.faq-question').click(function(){
+        $(this).next().toggle()
+        $(this).find('.arrow-faq').toggleClass('ri-arrow-up-s-line');
+        $(this).find('.arrow-faq').toggleClass('ri-arrow-down-s-line');
+    })
 
     $('.dot-amazonia').click(function(){
         window.location.href='/caipora-v1/amazonia';
@@ -31,6 +41,7 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
         window.location.href='/caipora-v1/guatemala';
     })
 
+    
     if (mediaQuery.matches) {
         $('.team-img').click(function(){
             $(this).next().toggle()
