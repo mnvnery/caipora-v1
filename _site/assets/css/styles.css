@@ -40,7 +40,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 @media only screen and (max-width: 600px) { .footer { left: 11vw; right: 0; height: 8vh; font-size: 2.5vw; padding-top: 2.3vh; } .footer-side { top: 2.3vh; right: 3vw; } .footer-img { width: 22vw; margin-top: 0; } }
 
-.sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
+.sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 4; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
 
 .title-left { width: 5vw; position: fixed; top: 0; right: 0; background-color: #F9E9D1; border-left: solid 1px black; height: 100%; z-index: 2; }
 
@@ -96,7 +96,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .index-page { overflow: hidden; }
 
-.header-img { z-index: 3; position: fixed; top: 0; }
+.header-img { z-index: 5; position: fixed; top: 0; }
 
 .map-grid { display: flex; margin-top: 15vh; margin-left: 8vw; }
 
