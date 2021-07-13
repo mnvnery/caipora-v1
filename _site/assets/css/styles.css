@@ -32,26 +32,6 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 @media only screen and (max-width: 600px) { main { margin-left: 11vw; margin-top: 10vw; margin-right: 0; } h1 { font-size: 4.2vw; letter-spacing: 0.3vw; } h4 { font-size: 2.5vw; } h5 { font-size: 2vw; } }
 
-.sidenav { height: 100%; width: 5vw; position: fixed; top: 0; left: 0; background-color: #F9E9D1; z-index: 2; border-right: solid 1px black; overflow-x: hidden; transition: 0.3s; }
-
-.menu-links { margin-top: 10vh; margin-left: -15vw; transition: 0.3s; }
-
-.menu-links-open { margin-left: 0; }
-
-/* The navigation menu links */
-.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; display: block; transition: 0.3s; font-family: "Pangram-Medium"; letter-spacing: 0.35vw; font-size: 1.25vw; line-height: 0; }
-
-.sidebar-forward-link { margin-left: 1.5vw; }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover { color: black; }
-
-.sidenav-open { width: 20vw; }
-
-.hamburger { margin-top: 10vh !important; float: right; margin-right: 0.3vw !important; }
-
-.about-link { text-decoration: underline !important; font-family: "Pangram-Bold" !important; }
-
 .footer { position: relative; left: 5vw; right: 5vw; bottom: 0; border-top: solid 1px black; width: 90vw; height: 5vw; padding-top: 2vh; font-size: 0.85vw; padding: 3vh 2vw 0 2vw; flex-shrink: 0; }
 
 .footer-img { width: 9vw; height: 100%; margin-left: 1em; margin-top: 0.5em; }
@@ -73,7 +53,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 .menu-links-open { margin-left: 0; }
 
 /* The navigation menu links */
-.sidenav a { padding: 0.5vw 0.5vw 1vw 2.2vw; text-decoration: none; display: block; transition: 0.3s; font-family: "Pangram-Medium"; letter-spacing: 0.30vw; font-size: 1.1vw; line-height: 0; }
+.menu-links a { padding: 0.5vw 0.5vw 1vw 2.2vw; text-decoration: none; display: block; transition: 0.3s; font-family: "Pangram-Medium"; letter-spacing: 0.30vw; font-size: 1.1vw; line-height: 0; }
 
 .sidebar-forward-link { margin-left: 1.5vw; }
 
@@ -98,7 +78,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .page-title-mobile { display: none; }
 
-@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .sidenav a { font-size: 4.8vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
+@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .menu-links a { font-size: 4.8vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
 
 .ocre { background-color: #F9E9D1; }
 
