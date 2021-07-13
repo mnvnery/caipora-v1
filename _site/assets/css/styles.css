@@ -62,7 +62,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .sidenav-open { width: 20vw; }
 
-.hamburger { margin-top: 10vh !important; float: right; margin-right: 0.7vw !important; }
+.hamburger { margin-top: 10vh !important; float: right; display: flex !important; width: 5vw; justify-content: center; align-items: center; margin-right: 0 !important; }
 
 .active { text-decoration: underline !important; }
 
@@ -78,7 +78,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .page-title-mobile { display: none; }
 
-@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; } .hamburger-inner, ::before, ::after { width: 20px !important; } .menu-links a { font-size: 4.5vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
+@media only screen and (max-width: 600px) { .page-title { letter-spacing: 3vh; font-size: 5vw; padding-right: 0; top: 15vh; } .page-title-mobile { width: 11vw; display: flex; justify-content: center; align-items: center; } .sidenav { width: 11vw; } .sidenav-open { width: 60vw; } .hamburger { margin-top: 6.2vh !important; padding: 10px 5px !important; width: 11vw; } .hamburger-inner, ::before, ::after { width: 20px !important; } .menu-links a { font-size: 4.5vw; line-height: 6vw; padding-left: 5.5vw; letter-spacing: 1vw; } .socials-open { left: 5.5vw; } .menu-links { margin-top: 12vh; margin-left: -51vw; } .menu-links-open { margin-left: 0; } .sidebar-forward-link { margin-left: 3.5vw; } }
 
 .ocre { background-color: #F9E9D1; }
 
@@ -168,7 +168,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .reserve-text { position: absolute; top: 67%; left: 50%; transform: translate(-50%, -60%); }
 
-.program { background-color: #DDEBDF; width: 40vw; padding: 5vh 3vw; height: 200vh; overflow: scroll; }
+.program { background-color: #DDEBDF; width: 40vw; padding: 5vh 3vw; height: 200vh; overflow: scroll; margin: 0; }
 
 .program-guatemala { height: 120vh; }
 
@@ -222,9 +222,9 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 .carousel-control-prev, .carousel-control-next { width: 5%; opacity: 1; }
 
-@media only screen and (min-width: 600px) { .program-summary { display: none; } .arrow-program { display: none; } }
+@media only screen and (min-width: 600px) { .program-summary { display: none; } .arrow-program { display: none; } .read-more { display: none; } .border-mobile { display: none; } }
 
-@media only screen and (max-width: 600px) { .map-img { width: 75vw; } .trip-info { flex-direction: column; } .reserve-img { width: 65vw; } .reserve-btn { margin-top: 2vh; margin-bottom: 2vh; } .mobile-flex-invert { flex-direction: column-reverse; } .description { width: 100%; font-size: 4vw; line-height: 3vh; padding: 3vh 4vw; } .program { width: 100%; border-right: none !important; height: 100%; } .guatemala { width: 55vw; } .program-day { font-size: 3vw; margin-bottom: 1vh; } .program-description { font-size: 3.5vw; display: none; } .mobile-title { font-size: 4.2vw; } .to-measure { width: 100%; border: none !important; border-bottom: solid 1px black !important; } .context { height: 100%; width: 100%; } .context img { width: 100%; padding: 3vh 0; } .mobile-flex-column { flex-direction: column; } .faq { width: 100%; } .faq-question, .faq-title { font-size: 4vw; } .includes { width: 100%; border: none !important; padding: 5vh 3vw 0 3vw; } .includes-tag, .includes-location { font-size: 3.5vw; } .includes-description { font-size: 4vw; } .carousel-inner img { height: 25vh; margin: 4vh auto; } .carousel-control-prev-icon, .carousel-control-next-icon { width: 5vw; height: 5vw; } }
+@media only screen and (max-width: 600px) { .map-img { width: 75vw; } .trip-info { flex-direction: column; } .reserve-img { width: 65vw; } .reserve-btn { margin-top: 2vh; margin-bottom: 2vh; } .mobile-flex-invert { flex-direction: column-reverse; } .mobile-flex-column { flex-direction: column; } .description { width: 100%; font-size: 4vw; line-height: 3vh; padding: 3vh 4vw; } .program { width: 100%; border-right: none !important; height: 100%; } .guatemala { width: 55vw; } .program-day { font-size: 3vw; margin-bottom: 1vh; } .program-description { font-size: 3.5vw; display: none; } .mobile-title { font-size: 4.2vw; } .to-measure { width: 100%; border: none !important; border-bottom: solid 1px black !important; } .context { height: 100%; width: 100%; } .context img { width: 100%; padding: 3vh 0; } .mobile-flex-column { flex-direction: column; } .faq { width: 100%; } .faq-question, .faq-title { font-size: 4vw; } .includes { width: 100%; border: none !important; padding: 5vh 3vw 0 3vw; } .includes-tag, .includes-location { font-size: 3.5vw; } .includes-description { font-size: 4vw; } .carousel-inner img { height: 25vh; margin: 4vh auto; } .carousel-control-prev-icon, .carousel-control-next-icon { width: 5vw; height: 5vw; } #more { display: none; } }
 
 /*! Hamburgers @description Tasty CSS-animated hamburgers @author Jonathan Suh @jonsuh @site https://jonsuh.com/hamburgers @link https://github.com/jonsuh/hamburgers */
 .hamburger { padding: 15px 15px; display: inline-block; cursor: pointer; transition-property: opacity, filter; transition-duration: 0.15s; transition-timing-function: linear; font: inherit; color: inherit; text-transform: none; background-color: transparent; border: 0; margin: 0; overflow: visible; }

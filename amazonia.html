@@ -156,8 +156,8 @@ descricao_viagem: <p>A Amazónia é a maior floresta tropical do mundo com a mai
   parte deste imenso e magnífico território. Porque mais do que tentar fazer muitos
   kms e passar à superfície por muitos sítios, propomos percorrer menos, mas de forma
   a conhecer bem uma parte. E encontrar ali, algo que na correria das nossas rotinas,
-  já nem percebemos a sua relevância. A calma de um Tempo menos apressado.<br><br><span
-  id="more"></span>Propomos explorar parte da Reserva de Desenvolvimento Sustentável do
+  já nem percebemos a sua relevância. A calma de um tempo menos apressado.<span
+  id="more"><br><br>Propomos explorar parte da Reserva de Desenvolvimento Sustentável do
   Rio Negro, perto do “encontro das águas” em que com o rio Solimões, se forma o grande
   rio Amazonas. O ponto de partida é o centro urbano em plena floresta - Manaus. Lá
   vamos conhecer pessoas que dedicam a sua vida na preservação de um território que
@@ -217,24 +217,24 @@ inclui_exclui:
         <h4 class="trip-route text-center mt-4 mb-5">MANAUS — TUMBIRA — IGAPÓ — PRAIA ALTA — <br> PRESIDENTE FIGUEIREDO — LAGOA AZUL — SALTO DO IPÊ</h4>
     
     <div class="trip-info text-center">
-        <div> 
+        <div class="w-100"> 
             <h4>DATAS DISPONÍVEIS</h4>
             <h4>–</h4>
             <h4>EM BREVE</h4>
         </div>
         <div class="border-right border-dark"></div>
-        <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
-        <div>
+        <div class=".d-none .d-sm-block border-bottom border-dark my-3 mx-5 border-mobile"></div>
+        <div class="w-100">
             <h4>PREÇO</h4>
             <h4>–</h4>
             <h4>1900€</h4><strong><h4>(VOO NÃO INCLUÍDO)</strong></h4>
         </div>
         <div class="border-right border-dark"></div>
         <div class=".d-none .d-sm-block border-bottom border-dark my-2"></div>
-        <div class='reserve-btn'>
+        <div class='reserve-btn w-100'>
             <img src="{{ site.baseurl }}/assets/img/montanha.svg" alt="" class="reserve-img">
             <h4 class="reserve-text">
-            CONTACTAR
+              <a href="mailto:caipora@caipora.com">CONTACTAR</a>
             </h4>
         </div>
     </div>
@@ -248,10 +248,10 @@ inclui_exclui:
             {% endfor %}
         </div>
         <div class=".d-none .d-sm-block border-bottom border-dark"></div>
-        <div class="description">{{ page.descricao_viagem }}</div>
+        <div class="description">{{ page.descricao_viagem }}<p class="read-more"><u>LER MAIS</u></p></div>
     </div>
 
-    <div class="d-flex align-items-center text-center mobile-flex-invert">
+    <div class="d-flex align-items-center text-center mobile-flex-column">
         <div class="context border-bottom border-dark"><img src="{{ site.baseurl }}/assets/img/context.svg" alt="" class="context-img"></div>
         <div class="to-measure border-bottom border-left border-dark">
         <h4 class="mobile-title">VIAGEM Á MEDIDA</h4>
@@ -308,3 +308,15 @@ inclui_exclui:
         </a>
     </div>
     </main>
+
+<script>
+  $('.read-more').click(function(){
+    $('#more').toggle();
+    if ($('.read-more').html() === "<u>LER MAIS</u>") {
+      $('.read-more').html("<u>FECHAR</u>");
+    }
+    else {
+      $('.read-more').html("<u>LER MAIS</u>");
+    }    
+  })
+</script>
