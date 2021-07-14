@@ -1,37 +1,43 @@
 .about-us 
-    font-size: 1.5vw
-    margin: 2vh 15vw 7vh 15vw
-
+    font-size: 1.35vw
+    margin: 2vh 16vw 7vh 16vw
+    line-height: 1.9vw
 
 .team-container 
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     margin-bottom: 20vh
+    justify-content: center
 
 
 .team-img 
-    width: 18vw 
+    width: 100%
 
 
 .team-info 
-    width: 18vw
+    align-self: stretch
     padding: 1vw
-    position: absolute
     background-color: $dark-pink
     display: none
+    position: absolute
+    z-index: 2
 
 .caipora-about
     display: inline
     font-size: 0.5em
 
+
 @media only screen and (max-width: 600px) 
     .about-us 
         font-size: 4vw
         margin: 2vh 5vw 4vh 5vw
+        line-height: 5.5vw
     
     .team-img 
         width: 44.5vw
     
     .team-info 
         width: 44.5vw
-    
+
+    .team-container 
+        grid-template-columns: 1fr 1fr
