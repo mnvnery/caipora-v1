@@ -212,7 +212,7 @@ inclui_exclui:
       <div class="program dark-green border-right border-dark program-guatemala">
           <h4 class="mb-3 mobile-title">PROGRAMA DIA A DIA</h4>
           {% for item in page.programa %}
-              <div class="program-day">{{ item.dia }}&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
+              <div class="program-day">{{ item.dia }}<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
               <div class="program-description">{{ item.programa }}</div>
           {% endfor %}
       </div>
