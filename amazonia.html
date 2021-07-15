@@ -7,7 +7,7 @@ programa:
   descricao: CHEGADA A MANAUS
   programa: "<p>Chegada, acomodação<br>Dicas para Jantar livre na praça<br>Pernoite
     em hotel em Manaus I</p>"
-- dia: 'DIA 2 '
+- dia: DIA 2
   descricao: 'VISITA A MANAUS '
   programa: "<p><em>MANHÃ</em>: Encontro das Águas, Museu do Seringal<br><em>TARDE</em>:
     Centro histórico e Visita ao Teatro Amazonas<br><em>NOITE</em>: Happy hour na
@@ -18,7 +18,7 @@ programa:
     sobre cenário atual da Amazônia, ameaças, áreas protegidas, povos Amazônicos e
     projetos de conservação com profissional/ativista<br>Pernoite em hotel em Manaus
     III / Refeições não inclusas</p>"
-- dia: 'DIA 4 '
+- dia: DIA 4
   descricao: IDA PARA TUMBIRA
   programa: "<p><em>MANHÃ</em>: Saída do hotel às 9h00<br>Saída de lancha às 9h30<br>Viagem
     ao Tumbira, Acomodação<br><em>TARDE</em>: Apresentação da Comunidade e do espaço
@@ -29,7 +29,7 @@ programa:
   programa: "<p><em>MANHÃ</em>: Trilha do Tumbira<br><em>TARDE</em>: Oficina de Artesanato
     com palhas locais e tingimento natural – produção de abano individual.<br>Pernoite
     Pousada no Tumbira II / Refeições inclusas</p>"
-- dia: 'DIA 6 '
+- dia: DIA 6
   descricao: TRILHA DA NASCENTE
   programa: "<p><em>MANHÃ</em>: Trilha da Nascente – Trilha mais longa (nível leve)
     com visita a árvores centenárias e nascente de água.<br><em>TARDE</em>: Visita
@@ -243,7 +243,7 @@ inclui_exclui:
             <h4 class="mb-3 mobile-title">PROGRAMA DIA A DIA</h4>
             {% for item in page.programa %}
                 <div class="program-day">
-                    {{ item.dia }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
+                    {{ item.dia }}&nbsp&nbsp&nbsp&nbsp&nbsp<span class="program-summary">{{ item.descricao }}</span><i class="arrow-faq arrow-program ri-arrow-down-s-line"></i></div>
                 <div class="program-description">{{ item.programa }}</div>
             {% endfor %}
         </div>
