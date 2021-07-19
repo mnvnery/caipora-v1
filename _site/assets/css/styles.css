@@ -122,7 +122,7 @@ h5 { font-family: "HKGrotesk-Bold"; font-size: 0.9vw; letter-spacing: 0.1vw; }
 
 @media only screen and (min-width: 1000px) { .desktop { display: block; } .mobile { display: none; } #mobile-canvas { display: none; } }
 
-@media only screen and (max-width: 1000px) { .mobile { display: block; } .desktop { display: none; } .map-grid { flex-direction: column; margin-left: 11vw; margin-top: 7vh; } .venezuela-flex { flex-direction: column; } .amazonia-flex { margin-top: 5vh; margin-left: 0; } .locations { width: 89vw; } .dot { width: 3vw; height: 3vw; } .dot-flex { margin-left: 20vw; } .dot-amazonia { margin-left: 35vw; margin-bottom: 4vh; } .dot-venezuela { margin-top: 4vh; } #canvas { display: none; } }
+@media only screen and (max-width: 1000px) { .mobile { display: block; } .desktop { display: none; } .map-grid { flex-direction: column; margin-left: 11vw; margin-top: 7vh; } .venezuela-flex { flex-direction: column; } .amazonia-flex { margin-top: 5vh; margin-left: 0; } .locations { width: 89vw; } .dot { width: 3vw; height: 3vw; } .dot-flex { margin-left: 20vw; } .dot-title { visibility: visible; font-size: 4vw; } .dot-amazonia { margin-left: 35vw; margin-bottom: 4vh; } .dot-venezuela { margin-top: 4vh; } #canvas { display: none; } }
 
 .about-us { font-size: 1.35vw; margin: 2vh 16vw 7vh 16vw; line-height: 1.9vw; }
 
