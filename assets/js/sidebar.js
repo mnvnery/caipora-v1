@@ -41,6 +41,14 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
         window.location.href='/caipora-v1/guatemala';
     })
 
+    $('.dot-title-amazonia').click(function(){
+        window.location.href='/caipora-v1/amazonia';
+    })
+
+    $('.dot-title-venezuela').click(function(){
+        window.location.href='/caipora-v1/guatemala';
+    })
+
     
     if (mediaQuery.matches) {
         $('.team-img').click(function(){
